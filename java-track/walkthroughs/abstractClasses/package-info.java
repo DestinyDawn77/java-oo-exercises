@@ -1,0 +1,8 @@
+/**
+ * 
+ */
+/**
+ * @author mailf
+ *
+ */
+package abstractClasses;
