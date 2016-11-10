@@ -3,9 +3,20 @@ package javagram.filters;
 import javagram.Picture;
 import java.awt.Color;
 
-public class BlueFilter {
-
-	public Picture process(Picture original) {
+public class BlueFilter implements Filter{
+	
+	private Picture original;
+	
+	
+	public BlueFilter(Picture original){
+		this.original = original;
+		
+		
+	}
+		
+		
+		
+	public Picture process() {
 		
 		Picture processed = new Picture(original.width(), original.height());
         
@@ -26,8 +37,16 @@ public class BlueFilter {
 	    	  
 	      }
 	    }
-		
-		return processed;
+	    
+	   return processed;
 	}
+
+
+
+
+	
+
+	
+	
 
 }
